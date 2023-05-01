@@ -15,3 +15,9 @@ The car uses a small lithium ion battery connected to a TP4056 charge controller
 We have created a range of tools for a versatile system. One tool, ‘radar’, searches for the presence of devices on a network and assigns unique identifiers. The controller takes an image with no cars, uses Aruco tags to find the track, and filters colours to determine roads/intersections. An event loop determines the position and direction of the car’s tag, decides which nodes it should travel to, and interfaces with it via RESTful http calls.
 
 The car knows where it is, where it should go, and its orientation. It can thus establish an angle correction, and updates the speeds of the motors. Collisions are avoided by the controller, which splits up the nodes cars can visit into zones. Only one car can occupy a zone at once, so the controller instructs cars to stop and wait if the zone ahead is blocked. An admin page on [teampanic.eu.org](https://teampanic.eu.org) can remap the track, reboot, start or stop the car(s), and view data from them.
+
+## Useful Links
+
+- [Website](https://teampanic.eu.org)
+- [Website (beta)](https://staging.teampanic.eu.org)
+- [Grafana](https://grafana-pi01.ben-services.eu.org/d/tUwKjoiRz/dev-stuff?orgId=1&search=open&query=folder:current) (only available when system is online)
